@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5 Link dengan Ikon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .link-card {
+            background: white;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin: 15px 0;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .link-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background: #e3f2fd;
+        }
+        
+        .icon {
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        
+        .link-content {
+            flex-grow: 1;
+        }
+        
+        .link-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .link-url {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .arrow {
+            color: #667eea;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="link-card">
+        <h1 style="text-align: center; color: #333; margin-bottom: 30px;">
+            <i class="fas fa-link"></i> 5 Link Populer
+        </h1>
+        
+        <a href="https://www.google.com" target="_blank" class="link-item">
+            <div class="icon">
+                <i class="fab fa-google"></i>
+            </div>
+            <div class="link-content">
+                <div class="link-title">Google Search</div>
+                <div class="link-url">www.google.com</div>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </a>
+        
+        <a href="https://www.youtube.com" target="_blank" class="link-item">
+            <div class="icon">
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="link-content">
+                <div class="link-title">YouTube</div>
+                <div class="link-url">www.youtube.com</div>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </a>
+        
+        <a href="https://github.com" target="_blank" class="link-item">
+            <div class="icon">
+                <i class="fab fa-github"></i>
+            </div>
+            <div class="link-content">
+                <div class="link-title">GitHub</div>
+                <div class="link-url">www.github.com</div>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </a>
+        
+        <a href="https://www.netflix.com" target="_blank" class="link-item">
+            <div class="icon">
+                <i class="fas fa-film"></i>
+            </div>
+            <div class="link-content">
+                <div class="link-title">Netflix</div>
+                <div class="link-url">www.netflix.com</div>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </a>
+        
+        <a href="https://www.amazon.com" target="_blank" class="link-item">
+            <div class="icon">
+                <i class="fab fa-amazon"></i>
+            </div>
+            <div class="link-content">
+                <div class="link-title">Amazon</div>
+                <div class="link-url">www.amazon.com</div>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
